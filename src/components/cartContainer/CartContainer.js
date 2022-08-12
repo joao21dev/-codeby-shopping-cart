@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import CartHeader from '../cartHeader/CartHeader';
 
 const Container = styled.section`
   position: absolute;
@@ -15,7 +16,11 @@ const Container = styled.section`
 `;
 
 const CartContainer = () => {
-  return <Container></Container>;
+  return (
+    <Container>
+      <CartHeader />
+    </Container>
+  );
 };
 
 export default CartContainer;
